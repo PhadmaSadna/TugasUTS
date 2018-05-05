@@ -36,7 +36,7 @@ class Customer extends CI_Controller {
 		if ($this->form_validation->run() == FALSE) {
 			//Meload View tambah artikel
 			$this->load->view('admin/V_HeaderAdmin');
-			$this->load->view('admin/C_create',$data);
+			$this->load->view('admin/C_create');
 		}else {
                  $data['input'] = array(
                  	'CustName' => $this->input->post('CustName'),

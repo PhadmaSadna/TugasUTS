@@ -13,11 +13,11 @@
 					<div class="gtco-widget">
 						<h3>Destination</h3>
 						<ul class="gtco-footer-links">
-							<li><a href="#">Europe</a></li>
-							<li><a href="#">Australia</a></li>
-							<li><a href="#">Asia</a></li>
-							<li><a href="#">Canada</a></li>
-							<li><a href="#">Dubai</a></li>
+							<li><a href="#">Lombok Barat</a></li>
+							<li><a href="#">Mataram</a></li>
+							<li><a href="#">Lombok Utara</a></li>
+							<li><a href="#">Lombok Tengah</a></li>
+							<li><a href="#">Lombok Timur</a></li>
 						</ul>
 					</div>
 				</div>
@@ -37,10 +37,10 @@
 
 				<div class="col-md-3 col-md-push-1">
 					<div class="gtco-widget">
-						<h3>Get In Touch</h3>
+						<h3>Contact Person</h3>
 						<ul class="gtco-quick-contact">
 							<li><a href="#"><i class="icon-phone"></i> +1 234 567 890</a></li>
-							<li><a href="#"><i class="icon-mail2"></i> info@GetTemplates.co</a></li>
+							<li><a href="#"><i class="icon-mail2"></i> info@E-trip.co</a></li>
 							<li><a href="#"><i class="icon-chat"></i> Live Chat</a></li>
 						</ul>
 					</div>
@@ -51,8 +51,8 @@
 			<div class="row copyright">
 				<div class="col-md-12">
 					<p class="pull-left">
-						<small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small> 
-						<small class="block">Designed by <a href="http://GetTemplates.co/" target="_blank">GetTemplates.co</a> Demo Images: <a href="http://unsplash.com/" target="_blank">Unsplash</a></small>
+						<small class="block">&copy; 2018 e-trip. All Rights Reserved.</small> 
+						<small class="block">Designed by <a href="http://GetTemplates.co/" target="_blank">E-trip.com</a></a></small>
 					</p>
 					<p class="pull-right">
 						<ul class="gtco-social-icons pull-right">

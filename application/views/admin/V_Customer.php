@@ -1,6 +1,6 @@
     <div class="container">
       <div class="col-xs-12 col-sm-9 col-md-9">
-        <a href="C_create" class="btn btn-danger">Add News</a>
+        <a href="C_create" class="btn btn-danger">Add Customer</a>
       </div>
 
       <div class="container"><br>
@@ -22,8 +22,8 @@ foreach ($customer->result_array() as $row)
       echo "<td>".$row['CustAddress']."</td>";
       echo "<td>".$row['CustPhone']."</td>";
       echo "<td>".$row['CustEmail']."</td>";
-      echo "<td><a href='".site_url('Customer/C_edit/'.$row['CustID'])."'>Edit</a></td>";
-      echo "<td><a href='".site_url('Customer/delete/'.$row['CustID'])."'>Delete</a></td>";
+      echo "<td><a href='".site_url('Customer/C_edit/'.$row['CustID'])."' span class='glyphicon glyphicon-pencil'></a>    ";
+      echo "<a href='".site_url('Customer/delete/'.$row['CustID'])."' span class='glyphicon glyphicon-trash'></a></td>";
       echo "</tr>";
 
     }

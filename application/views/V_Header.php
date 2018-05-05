@@ -2,7 +2,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Traveler &mdash; Free Website Template, Free HTML5 Template by GetTemplates.co</title>
+	<title>Traveler &mdash; Kelompok-01</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Website Template by GetTemplates.co" />
 	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
@@ -68,18 +68,18 @@
 				</div>
 				<div class="col-xs-8 text-right menu-1">
 					<ul>
-						<li><a href="destination.html">Destination</a></li>
 						<li class="has-dropdown">
-							<a href="#">Travel</a>
+							<a href="#">Destination</a>
 							<ul class="dropdown">
-								<li><a href="#">Europe</a></li>
-								<li><a href="#">Asia</a></li>
-								<li><a href="#">America</a></li>
-								<li><a href="#">Canada</a></li>
+								<li><a href="Lombar">Lombok Barat</a></li>
+								<li><a href="#">Mataram</a></li>
+								<li><a href="#">Lombok Utara</a></li>
+								<li><a href="#">Lombok Tengah</a></li>
+								<li><a href="#">Lombok Timur</a></li>
 							</ul>
 						</li>
-						<li><a href="pricing.html">Pricing</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="Pricing">Pricing</a></li>
+						<li><a href="Contact">Contact</a></li>
 					</ul>	
 				</div>
 			</div>
@@ -128,18 +128,13 @@
 													<div class="col-md-12">
 														<label for="destination">Destination</label>
 														<select name="#" id="destination" class="form-control">
-															<option value="">Philippines</option>
-															<option value="">USA</option>
-															<option value="">Australia</option>
-															<option value="">Singapore</option>
+															<option value="">Destination</option>
+															<option value="">Lombok Barat</option>
+															<option value="">Mataram</option>
+															<option value="">Lombok Utara</option>
+															<option value="">Lombok Tengah</option>
+															<option value="">Lombok Timur</option>
 														</select>
-													</div>
-												</div>
-												
-												<div class="row form-group">
-													<div class="col-md-12">
-														<label for="date-start">Date Travel</label>
-														<input type="text" id="date-start" class="form-control">
 													</div>
 												</div>
 

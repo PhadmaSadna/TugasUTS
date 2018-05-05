@@ -5,229 +5,62 @@
 	URL: http://gettemplates.co
 -->
 <html>
-	
+<body>
 	<div class="gtco-section">
 		<div class="gtco-container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-					<h2>Paket Wisata Lombok</h2>
-					<p>Dapatkan Paket Tour dan Travel yang Unik, Menarik nan eksotis dengan Harga Bersaing</p>
+					<h2>Paket Wisata di Lombok Barat</h2>
+					<p>Kabupaten Lombok Barat juga memiliki tempat-tempat wisata menarik di Lombok. Berikut ini adalah deretan destinasi wisata populer di Lombok Barat:</p>
 				</div>
 			</div>
 			<div class="row">
 
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="../assets/images/img_1.jpg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="../assets/images/img_1.jpg" alt="Image" class="img-responsive">
+							<img src="images/senggigi.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
-							<h2>TOUR KOMPLIT #1</h2>
-							<p>Duration: TOUR 4 HARILocation: Pantai Selatan, Air Terjun Sendang Gile, Gili Nanggu & City Tour</p>
-							<p><span class="btn btn-primary">Schedule a Trip</span></p>
+							<h2>Pantai Senggigi</h2>
+							<p>Price : Rp. 8.000.000,-<br>Duration Tour : 4 Day<br> 
+								<p>Sejak dulu, Pantai Senggigi dikenal sebagai tempat wisata paling populer di seantero Lombok. Pantai ini berjarak sekitar 50 Km dari Pelabuhan Lembar. Sebagai sebuah kawasan wisata yang dikenal luas, fasilitas penunjang bisa dijumpai dengan mudah di sini. Mulai dari keberadaan hotel murah, sarana transportasi, jasa pemandu wisata, penyewaan alat-alat snorkeling , dan lain-lain.
+
+								Tempat wisata ini pun selalu ramai oleh para pengunjung, baik siang ataupun malam hari. Terlebih, ada deretan hotel-hotel mewah sepanjang pantai. Mereka yang berkunjung ke tempat ini tidak hanya wisatawan lokal, tapi juga para turis mancanegara. Maklum saja, tempat ini memang kerap disebut sebagai pelopor yang mengenalkan wisata Indonesia di dunia internasional.</p>
+							<p><span class="btn btn-primary">Pilih</span></p>
 						</div>
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="../assets/images/img_2.jpg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="../assets/images/img_2.jpg" alt="Image" class="img-responsive">
+							<img src="images/purabatuB.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
-							<h2>Seoul, South Korea</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-							<p><span class="btn btn-primary">Schedule a Trip</span></p>
+							<h2>Pura Batu Bolong</h2>
+							<p>Price : Rp. 5.000.000,-<br>Duration Tour : 4 Day<br>
+								<p>Kalau berada di kawasan Senggigi, Anda tidak hanya bisa menyaksikan keindahan Pantai Senggigi. Tempat wisata Pura Batu Bolong juga sayang untuk dilewatkan. Pura ini memiliki suasana yang mirip dengan Tanah Lot di Bali, terutama karena lokasinya yang ada di tepi pantai. Sebagai tambahan, pura ini memiliki ciri khas pada keberadaan batu berlubang yang ada di area pura.
+
+								Untuk masuk ke tempat wisata ini, para pengunjung harus membayar tiket masuk sebesar Rp20.000,00 per orang. Momen terbaik yang bisa dirasakan ketika datang ke tempat ini adalah pada sore hari menjelang matahari terbenam. Pada saat itu, kesan eksotis akan Anda dapatkan—pemandangan pura dengan latar belakang langit berwarna jingga.</p>
+							<p><span class="btn btn-primary">Pilih</span></p>
 						</div>
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="../assets/images/img_3.jpg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="../assets/images/img_3.jpg" alt="Image" class="img-responsive">
+							<img src="images/sekotong.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
-							<h2>Paris, France</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-							<p><span class="btn btn-primary">Schedule a Trip</span></p>
+							<h2>Pantai Sekotong</h2>
+							<p>Price : Rp. 7.000.000,-<br>Duration Tour : 4 Day<br>
+								<p>Pantai Sekotong bisa menjadi pilihan tempat wisata menarik berikutnya di Pulau Lombok. Pantai yang berjarak 60 Km dari pusat Kota Mataram ini memiliki keindahan yang membuat siapa pun terpukau. Terlebih, pantai ini merupakan pantai yang dikeliling oleh area perbukitan, membuatnya jadi lokasi yang bersih dan jarang terjamah tangan manusia.
+
+								Beragam aktivitas bisa dilakukan di tempat wisata ini. Airnya yang jernih, bakal mengundang Anda untuk menyelami keindahan alam bawah lautnya. Selain itu, Anda bisa pula mengajak anggota keluarga atau teman rombongan untuk berkeliling belasan pulau kecil yang lokasinya berdekatan dengan Pantai Sekotong. Mulai dari Gili Asahan, Gili Layar, Gili Tangkong, Gili Gede, Gili Sudak, Gili Nanggu, dan lain-lain.</p>
+							<p><span class="btn btn-primary">Pilih</span></p>
 						</div>
 					</a>
 				</div>
-
-
-				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="../assets/images/img_4.jpg" class="fh5co-card-item image-popup">
-						<figure>
-							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="../assets/images/img_4.jpg" alt="Image" class="img-responsive">
-						</figure>
-						<div class="fh5co-text">
-							<h2>Sydney, Australia</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-							<p><span class="btn btn-primary">Schedule a Trip</span></p>
-						</div>
-					</a>
-				</div>
-
-				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="../assets/images/img_5.jpg" class="fh5co-card-item image-popup">
-						<figure>
-							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="../assets/images/img_5.jpg" alt="Image" class="img-responsive">
-						</figure>
-						<div class="fh5co-text">
-							<h2>Greece, Europe</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-							<p><span class="btn btn-primary">Schedule a Trip</span></p>
-						</div>
-					</a>
-				</div>
-
-				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="../assets/images/img_6.jpg" class="fh5co-card-item image-popup">
-						<figure>
-							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="../assets/images/img_6.jpg" alt="Image" class="img-responsive">
-						</figure>
-						<div class="fh5co-text">
-							<h2>Spain, Europe</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-							<p><span class="btn btn-primary">Schedule a Trip</span></p>
-						</div>
-					</a>
-				</div>
-
-			</div>
-		</div>
-	</div>
-	
-	<div id="gtco-features">
-		<div class="gtco-container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">
-					<h2>How It Works</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 col-sm-6">
-					<div class="feature-center animate-box" data-animate-effect="fadeIn">
-						<span class="icon">
-							<i>1</i>
-						</span>
-						<h3>Lorem ipsum dolor sit amet</h3>
-						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="feature-center animate-box" data-animate-effect="fadeIn">
-						<span class="icon">
-							<i>2</i>
-						</span>
-						<h3>Consectetur adipisicing elit</h3>
-						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="feature-center animate-box" data-animate-effect="fadeIn">
-						<span class="icon">
-							<i>3</i>
-						</span>
-						<h3>Dignissimos asperiores vitae</h3>
-						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-					</div>
-				</div>
-				
-
-			</div>
-		</div>
-	</div>
-
-
-	<div class="gtco-cover gtco-cover-sm" style="background-image: url(../assets/images/img_bg_1.jpg)"  data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="gtco-container text-center">
-			<div class="display-t">
-				<div class="display-tc">
-					<h1>We have high quality services that you will surely love!</h1>
-				</div>	
-			</div>
-		</div>
-	</div>
-
-	<div id="gtco-counter" class="gtco-section">
-		<div class="gtco-container">
-
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">
-					<h2>Our Success</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-				</div>
-			</div>
-
-			<div class="row">
-				
-				<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
-					<div class="feature-center">
-						<span class="counter js-counter" data-from="0" data-to="196" data-speed="5000" data-refresh-interval="50">1</span>
-						<span class="counter-label">Destination</span>
-
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
-					<div class="feature-center">
-						<span class="counter js-counter" data-from="0" data-to="97" data-speed="5000" data-refresh-interval="50">1</span>
-						<span class="counter-label">Hotels</span>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
-					<div class="feature-center">
-						<span class="counter js-counter" data-from="0" data-to="12402" data-speed="5000" data-refresh-interval="50">1</span>
-						<span class="counter-label">Travelers</span>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
-					<div class="feature-center">
-						<span class="counter js-counter" data-from="0" data-to="12202" data-speed="5000" data-refresh-interval="50">1</span>
-						<span class="counter-label">Happy Customer</span>
-
-					</div>
-				</div>
-					
-			</div>
-		</div>
-	</div>
-
-	
-
-	<div id="gtco-subscribe">
-		<div class="gtco-container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-					<h2>Subscribe</h2>
-					<p>Be the first to know about the new templates.</p>
-				</div>
-			</div>
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2">
-					<form class="form-inline">
-						<div class="col-md-6 col-sm-6">
-							<div class="form-group">
-								<label for="email" class="sr-only">Email</label>
-								<input type="email" class="form-control" id="email" placeholder="Your Email">
-							</div>
-						</div>
-						<div class="col-md-6 col-sm-6">
-							<button type="submit" class="btn btn-default btn-block">Subscribe</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-
 	</body>
 </html>
 
