@@ -58,25 +58,7 @@
 	<div id="page">
 
 	
-	<!-- <div class="page-inner"> -->
-	<nav class="gtco-nav" role="navigation">
-		<div class="gtco-container">
-			
-			<div class="row">
-				<div class="col-sm-4 col-xs-12">
-					<div id="gtco-logo"><a href="index.html">E-TRIP <em>.</em></a></div>
-				</div>
-				<div class="col-xs-8 text-right menu-1">
-					<ul>
-						<li><a href="Contact" class="btn btn-primary">Contact</a></li>
-						<li><a href="Loginnew" class="btn btn-primary">Login Admin</a></li>
-					</ul>	
-				</div>
-			</div>
-			
-		</div>
-	</nav>
-	
+	<!-- <div class="page-inner"> -->	
 	<header id="gtco-header" class="gtco-cover gtco-cover-md" role="banner" 
 	style="background-image: url('../assets/css/img_bg_2.jpg')">
 		<div class="overlay"></div>
@@ -86,26 +68,42 @@
 					
 
 					<div class="row row-mt-15em">
-						<div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
-							<h1>Planing Trip To Anywhere in The Lombok?</h1>	
-						</div>
-						<div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
+						<div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInCenter">
 							<div class="form-wrap">
 								<div class="tab">									
 									<div class="tab-content">
 										<div class="tab-content-inner active" data-content="signup">
-											<h3>Your Destination :</h3>
+											<h3>Isi Form Pelanggan</h3>
 											<form action="#">
 												<div class="row form-group">
-														<li class="has-dropdown">
-														<span class="btn btn-primary btn-block" value="Submit">Destination</span>
-														<ul class="dropdown">
-														<li><a href="Lombar">Lombok Barat</a></li>
-														<li><a href="Mataram">Mataram</a></li>
-														<li><a href="LomUtara">Lombok Utara</a></li>
-														<li><a href="LomTengah">Lombok Tengah</a></li>
-														<li><a href="LomTimur">Lombok Timur</a></li>
-													</ul>
+													<div class="col-md-12">
+														<label for="fullname">Nama</label>
+														<input type="text" id="fullname" class="form-control">
+													</div>
+												</div>
+												<div class="row form-group">
+													<div class="col-md-12">
+														<label for="fullname">Alamat</label>
+														<input type="text" id="fullname" class="form-control">
+													</div>
+												</div>
+												<div class="row form-group">
+													<div class="col-md-12">
+														<label for="fullname">Telepon</label>
+														<input type="text" id="fullname" class="form-control">
+													</div>
+												</div>
+												<div class="row form-group">
+													<div class="col-md-12">
+														<label for="fullname">Email</label>
+														<input type="text" id="fullname" class="form-control">
+													</div>
+												</div>
+
+												<div class="row form-group">
+													<div class="col-md-12">
+														<a href="Upload" class="btn btn-primary btn-block">Next</a>
+													</div>
 												</div>
 											</form>	
 										</div>
@@ -120,4 +118,34 @@
 			</div>
 		</div>
 	</header>
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	
+	<!-- Datepicker -->
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	
+
+	<!-- Main -->
+	<script src="js/main.js"></script>
 </div>
