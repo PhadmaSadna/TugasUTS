@@ -27,7 +27,7 @@
 								<p>Kalau masih belum puas dengan keindahan Pantai Kuta Lombok, Anda juga bisa melanjutkan perjalanan ke Pantai Seger. Tempat wisata yang satu ini lokasinya berdekatan dengan Pantai Kuta Lombok. Anda hanya perlu melanjutkan perjalanan ke arah timur sejauh 4 Km. Di sini, Anda bisa menyaksikan pemandangan matahari terbenam yang mengagumkan dari atas bukit.
 
 								Selain memiliki pemandangan matahari terbenam yang menakjubkan, pantai ini kerap menjadi lokasi olahraga selancar favorit. Dengan ombaknya yang tinggi, para peselancar bisa merasakan keseruan tersendiri di tempat wisata ini. Untuk masuk ke area pantai, Anda juga tidak perlu membayar mahal, hanya dikenakan biaya parkir kendaraan sebesar Rp10 ribu.</p>
-							<p><a href="Upload" class="btn btn-primary">Pilih</a></p>
+							<p><a href="FormPelanggan" class="btn btn-primary">Pilih</a></p>
 						</div>
 						</figure>
 					</a>
@@ -44,7 +44,7 @@
 							Di desa yang berjarak sekitar 6 Km dari Desa Kuta ini, Anda bisa menyaksikan keberadaan rumah-rumah tradisional milik penduduk. Mereka masih menggunakan bahan-bahan tradisional untuk pembangunan rumah, mulai dari tiang kayu, atap dari alang-lang kering, hingga dinding dari bambu.
 
 							Ada hal menarik lain yang bisa dijumpai di tempat ini, terutama terkait kebiasaan warga Desa Sasak dalam memanfaatkan kotoran kerbau. Kotoran tersebut mereka gunakan sehari-hari untuk membersihkan rumah. Dalam kepercayaan masyarakat di tempat wisata ini, kotoran kerbau berguna untuk mengusir serangga dan serangan magis.</p>
-							<p><a href="Upload" class="btn btn-primary">Pilih</a></p>
+							<p><a href="FormPelanggan" class="btn btn-primary">Pilih</a></p>
 						</div>
 						</figure>
 					</a>
@@ -59,7 +59,7 @@
 								<p>Berkunjung ke Kuta Lombok, Anda juga tidak boleh melewatkan keberadaan Bukit Merese. Tempat wisata ini berdekatan dengan Pantai Tanjung Aan dan akses masuknya bisa dilewati baik oleh kendaraan roda dua ataupun roda empat. Sesampainya di atas bukit, Anda akan bisa menyaksikan pemandangan yang memukau siapa saja. Bahkan, tidak sedikit yang menyebut pemandangan di sini bak pemandangan di negeri lain.
 
 								Dari padang rumput atas bukit ini, Anda akan bisa menjumpai keberadaan kerbau yang tengah mencari makan. Selain itu, Anda dapat pula menyaksikan pemandangan Pantai Tanjung Aan dari ketinggian. Namun, tidak banyak aktivitas yang bisa dilakukan di sini. Anda hanya bisa bersantai sembari berburu foto instagrammable atau menunggu kedatangan waktu matahari terbenam.</p>
-							<p><a href="Upload" class="btn btn-primary">Pilih</a></p>
+							<p><a href="FormPelanggan" class="btn btn-primary">Pilih</a></p>
 						</div>
 						</figure>
 					</a>

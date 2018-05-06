@@ -29,7 +29,7 @@
 								Pura Taman Mayura pun merupakan salah satu peninggalan dari Raja Anak Agung Made Karangasem dari Kerajaan Karangasem Bali. Bangunan yang didirikan pada tahun 1744 ini memiliki desain arsitektur yang indah. Tidak heran kalau banyak wisatawan yang berkunjung ke tempat wisata seluas 3 hektare ini.
 
 								Anda bisa berangkat ke tempat wisata ini dari pusat Kota Mataram menggunakan angkutan umum atau taksi. Untuk masuk ke area taman, para pengunjung dikenakan tarif masuk yang murah, yakni Rp5.000,00 per orang.</p>
-							<p><a href="Upload" class="btn btn-primary">Pilih</a></p>
+							<p><a href="FormPelanggan" class="btn btn-primary">Pilih</a></p>
 						</div>
 						</figure>
 					</a>
@@ -44,7 +44,7 @@
 							<p>Sempat menjadi wilayah dari Kerajaan Karangasem Bali, penganut agama Hindu di Lombok cukup tinggi. Hal itu terlihat dari keberadaan tempat wisata Pura Meru yang ada di Cakranegara yang merupakan pura terbesar yang ada di Lombok. Usianya pun sudah tua, dibangun pada abad ke 18.
 
 							Para wisatawan yang datang ke tempat wisata ini bisa menyaksikan keunikan desain arsitektur pura. Pada saat melintasi jalanan, Anda akan dihadapkan dengan keberadaan tiga meru bertingkat yang dibuat dengan menggunakan atap dari bahan ijuk.</p>
-							<p><a href="Upload" class="btn btn-primary">Pilih</a></p>
+							<p><a href="FormPelanggan" class="btn btn-primary">Pilih</a></p>
 						</div>
 						</figure>
 					</a>
@@ -61,7 +61,7 @@
 								Kalau ingin menyaksikan suasana Kota Tua Ampenan, tidak terlalu sulit. Tempat wisata Kota Tua Ampenan yang merupakan bagian dari wilayah Kota Mataram bisa dijangkau dari Pelabuhan Lembar—pelabuhan yang menghubungkan Padangbai Bali dengan Lombok. Perjalanan dari Lembar menuju ke sini tidak terlalu jauh, hanya memakan waktu perjalanan selama 1 jam.
 
 								Sebagai tambahan, Kota Tua Ampenan juga kerap menjadi persinggahan bagi para wisatawan. Alasannya, karena di sini tersedia beragam pilihan hotel murah. Selain itu, akses transportasi dari Ampenan menuju berbagai tempat wisata di Lombok juga bisa dijumpai dengan mudah.</p>
-							<p><a href="Upload" class="btn btn-primary">Pilih</a></p>
+							<p><a href="FormPelanggan" class="btn btn-primary">Pilih</a></p>
 						</div>
 						</figure>
 					</a>

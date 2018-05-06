@@ -29,7 +29,7 @@
 								Kalau mau, Anda juga bisa mencoba untuk berkunjung ke dua pulau kecil lain yang lokasinya berdekatan dengan Gili Trawangan, yakni Gili Air dan Gili Meno. Kalau Gili Trawangan menjadi lokasi yang ramai dan kerap dilaksanakan pesta tepi pantai, Gili Meno dan Gili Air punya suasana yang lebih tenang.
 
 								Anda juga tidak perlu mengeluarkan uang banyak untuk bisa berlibur di tempat wisata ini. Akses transportasi bisa dilakukan dengan mudah dari Pelabuhan Bangsal atau bisa pula dari Padang Bai di Bali. Untuk tempat menginap, Anda bisa menemukan keberadaan hotel-hotel murah di sini. Dengan kisaran harga mulai dari Rp200 ribuan per malam.</p>
-							<p><a href="Upload" class="btn btn-primary">Pilih</a></p>
+							<p><a href="FormPelanggan" class="btn btn-primary">Pilih</a></p>
 						</div>
 						</figure>
 					</a>
@@ -44,7 +44,7 @@
 							<p>Gili Air merupakan sebuah pulau kecil yang berada satu gugus dengan Gili Trawangan dan Gili Meno. Karena ukurannya yang kecil, Anda pun bisa mengelilingi tempat wisata ini dengan berjalan kaki hanya dalam waktu 90 menit. Anda juga tidak perlu khawatir tersesat, karena jalan setapak yang ada di pulau ini semuanya mengarah ke tepi pantai.
 
 							Akses menuju ke tempat wisata ini bisa dilakukan dari berbagai tempat. Mulai dari Gili Trawangan, Pelabuhan Bangsal, Pantai Senggigi, ataupun Pantai Padang Bai di Bali. Hanya saja, durasi keberangkatan kapal menuju ke Gili Air lebih rendah dibandingkan dengan jadwal kapal ke Gili Trawangan.</p>
-							<p><a href="Upload" class="btn btn-primary">Pilih</a></p>
+							<p><a href="FormPelanggan" class="btn btn-primary">Pilih</a></p>
 						</div>
 						</figure>
 					</a>
@@ -61,7 +61,7 @@
 								Di tempat wisata ini, Anda juga akan merasakan suasana yang jauh berbeda dengan Pantai Senggigi. Kalau di Senggigi suasananya sangat ramai, Pantai Nipah merupakan pantai yang sepi pengunjung. Pemandangan yang ada di tempat ini juga tidak kalah indahnya.
 
 								Seperti halnya di Pantai Senggigi, Anda bisa menyaksikan pemandangan matahari terbenam yang menakjubkan di Pantai Nipah. Menariknya lagi, Anda juga tidak perlu mengeluarkan uang untuk tiket masuk ke tempat wisata ini. Cukup bayar tarif parkir kendaraan, maka Anda bisa bebas beraktivitas di area pantai.</p>
-							<p><a href="Upload" class="btn btn-primary">Pilih</a></p>
+							<p><a href="FormPelanggan" class="btn btn-primary">Pilih</a></p>
 						</div>
 						</figure>
 					</a>
