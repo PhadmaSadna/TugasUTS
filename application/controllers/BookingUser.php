@@ -1,23 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
-
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see https://codeigniter.com/user_guide/general/urls.html
-	 */
+class BookingUser extends CI_Controller {
 
 	public function __construct()
 	{
@@ -33,11 +17,13 @@ class Welcome extends CI_Controller {
 		$this->load->helper(array('form', 'url'));
 		date_default_timezone_set('Asia/Jakarta');
 	}
+
 	public function index()
 	{
-
+		//Memanggil fungsi menampilkan semua tabel artikel
+		$data['tour']=$this->ModTour->get_booking();
 		$this->load->view('V_Header');
-		$this->load->view('V_Home');
+		$this->load->view('V_UserBooking', $data);
 		$this->load->view('V_Footer');
 	}
 
@@ -64,7 +50,8 @@ class Welcome extends CI_Controller {
 		//Jika validasi belum berjalam
 		if ($this->form_validation->run() == FALSE) {
 			//Meload View tambah artikel
-			$this->load->view('CreateBookingUser', $data, FALSE);
+			$this->load->view('admin/V_HeaderAdmin');
+			$this->load->view('admin/tour/V_CreateBookingTour', $data, FALSE);
 		}else {
 			$packages = $this->ModTour->get_package($this->input->post('Packages'));
 			$duration = $packages[0]['duration'];
@@ -81,14 +68,7 @@ class Welcome extends CI_Controller {
               	 //query tambah data
 				 $this->ModTour->set_booking(0,$data['input']);
 				 //kembali ke home
-
-				 redirect('Welcome/');
-
-				 echo "
-				   <script>
-				   		alert('Your Booking is DONE!'');
-				   </script>
-				 ";
+				 redirect('BookingTour');
             }
         }
 
@@ -100,5 +80,3 @@ class Welcome extends CI_Controller {
 		echo $packages[0]['harga'];
 	}
 }
-
-

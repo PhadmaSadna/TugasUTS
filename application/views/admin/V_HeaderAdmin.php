@@ -18,6 +18,13 @@
  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
  <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
  <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+ <link rel="stylesheet" href="<?php echo base_url('assets/adminn/jquery-3.2.1.slim.min.js')?>">
+ <link rel="stylesheet" href="<?php echo base_url('assets/adminn/popper.min.js')?>">
+ <link rel="stylesheet" href="<?php echo base_url('assets/adminn/bootstrap.css')?>">
+ <link rel="stylesheet" href="<?php echo base_url('assets/adminn/dataTables.bootstrap4.min.css')?>">
+ <link rel="stylesheet" href="<?php echo base_url('assets/adminn/jquery-1.12.4.js')?>">
+ <link rel="stylesheet" href="<?php echo base_url('assets/adminn/jquery.dataTables.min.js')?>">
+ <link rel="stylesheet" href="<?php echo base_url('assets/adminn/dataTables.bootstrap4.min.js')?>">
 
 
 </head>

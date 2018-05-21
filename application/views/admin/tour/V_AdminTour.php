@@ -8,7 +8,7 @@
 
 <div class="container">
       <div class="col-xs-12 col-sm-9 col-md-9">
-        <a href="BookingTour/create_booking" class="btn btn-danger">Add Booking</a>
+        <a href="create_booking" class="btn btn-danger">Add Booking</a>
       </div>
 
       <div class="container"><br>

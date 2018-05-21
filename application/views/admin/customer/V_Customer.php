@@ -6,7 +6,7 @@
 
 <div class="container">
       <div class="col-xs-12 col-sm-9 col-md-9">
-        <a href="C_create" class="btn btn-danger">Add Customer</a>
+        <a href="Customer/C_create" class="btn btn-danger">Add Customer</a>
       </div>
 
       <div class="container"><br>

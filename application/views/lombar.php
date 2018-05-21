@@ -16,53 +16,26 @@
 				</div>
 			</div>
 			<div class="row">
-
+				<?php foreach ($paket->result() as $key) {?>
 				<div class="col-lg-4 col-md-4 col-sm-6">
 					<a href="/images/senggigi.jpg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="/images/senggigi.jpg" alt="Image" class="img-responsive">
+							<img src="<?=base_url('assets/images/').$key->image?>" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
-							<h2>Pantai Senggigi</h2>
-							<p>Price : Rp. 8.000.000,-<br>Duration Tour : 4 Day<br> 
-								<p>Sejak dulu, Pantai Senggigi dikenal sebagai tempat wisata paling populer di seantero Lombok. Pantai ini berjarak sekitar 50 Km dari Pelabuhan Lembar. Sebagai sebuah kawasan wisata yang dikenal luas, fasilitas penunjang bisa dijumpai dengan mudah di sini. Mulai dari keberadaan hotel murah, sarana transportasi, jasa pemandu wisata, penyewaan alat-alat snorkeling , dan lain-lain.
-
-								Tempat wisata ini pun selalu ramai oleh para pengunjung, baik siang ataupun malam hari. Terlebih, ada deretan hotel-hotel mewah sepanjang pantai. Mereka yang berkunjung ke tempat ini tidak hanya wisatawan lokal, tapi juga para turis mancanegara. Maklum saja, tempat ini memang kerap disebut sebagai pelopor yang mengenalkan wisata Indonesia di dunia internasional.</p>
+							<h2><?=$key->judul?></h2>
+							<p>Price : <?=$key->harga?>,-<br>Duration Tour : 4 Day<br> 
+								<p>Deskripsi</p>
 							<p><span class="btn btn-primary">Pilih</span></p>
 						</div>
 					</a>
 				</div>
-				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="/images/img_2.jpg" class="fh5co-card-item image-popup">
-						<figure>
-							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="/images/purabatuB.jpg" alt="Image" class="img-responsive">
-						</figure>
-						<div class="fh5co-text">
-							<h2>Pura Batu Bolong</h2>
-							<p>Price : Rp. 5.000.000,-<br>Duration Tour : 4 Day<br>Kalau berada di kawasan Senggigi, Anda tidak hanya bisa menyaksikan keindahan Pantai Senggigi. Tempat wisata Pura Batu Bolong juga sayang untuk dilewatkan. Pura ini memiliki suasana yang mirip dengan Tanah Lot di Bali, terutama karena lokasinya yang ada di tepi pantai. Sebagai tambahan, pura ini memiliki ciri khas pada keberadaan batu berlubang yang ada di area pura.
-
-							Untuk masuk ke tempat wisata ini, para pengunjung harus membayar tiket masuk sebesar Rp20.000,00 per orang. Momen terbaik yang bisa dirasakan ketika datang ke tempat ini adalah pada sore hari menjelang matahari terbenam. Pada saat itu, kesan eksotis akan Anda dapatkan—pemandangan pura dengan latar belakang langit berwarna jingga.</p>
-							<p><span class="btn btn-primary">Pilih</span></p>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-6">
-					<img src="/images/sekotong.jpg" class="fh5co-card-item image-popup">
-						<figure>
-							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="/images/sekotong.jpg" alt="Image" class="img-responsive">
-						</figure>
-						<div class="fh5co-text">
-							<h2>Pantai Sekotong</h2>
-							<p>Price : Rp. 7.000.000,-<br>Duration Tour : 4 Day<br>Pantai Sekotong bisa menjadi pilihan tempat wisata menarik berikutnya di Pulau Lombok. Pantai yang berjarak 60 Km dari pusat Kota Mataram ini memiliki keindahan yang membuat siapa pun terpukau. Terlebih, pantai ini merupakan pantai yang dikeliling oleh area perbukitan, membuatnya jadi lokasi yang bersih dan jarang terjamah tangan manusia.
-
-							Beragam aktivitas bisa dilakukan di tempat wisata ini. Airnya yang jernih, bakal mengundang Anda untuk menyelami keindahan alam bawah lautnya. Selain itu, Anda bisa pula mengajak anggota keluarga atau teman rombongan untuk berkeliling belasan pulau kecil yang lokasinya berdekatan dengan Pantai Sekotong. Mulai dari Gili Asahan, Gili Layar, Gili Tangkong, Gili Gede, Gili Sudak, Gili Nanggu, dan lain-lain.</p>
-							<p><span class="btn btn-primary">Pilih</span></p>
-						</div>
-					</a>
-				</div>
+			<?php } ?>
+		</div>
+		<div class="container" align="center">
+			<?php echo $links; ?>
+		</div>
 	</body>
 </html>
 

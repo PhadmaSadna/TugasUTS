@@ -8,6 +8,15 @@ class ModTour extends CI_Model {
           $this->load->database();
      } 
      
+     public function get_tour($limit = null, $offset = null){
+          $this->db->limit($limit, $offset);
+          return $this->db->get('paket_tour');
+     }
+
+     public function get_total_tour(){
+          return $this->db->get('paket_tour')->num_rows();
+     }
+
      public function get_booking(){
           $query = $this->db->get('tour');
           return $query;

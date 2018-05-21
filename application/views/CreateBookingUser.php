@@ -1,3 +1,9 @@
+<!DOCTYPE HTML>
+<!--
+	Aesthetic by gettemplates.co
+	Twitter: http://twitter.com/gettemplateco
+	URL: http://gettemplates.co
+-->
 <html>
 <head>
 	<meta charset="utf-8">
@@ -45,20 +51,15 @@
 
 	<!-- Modernizr JS -->
 	<script src="<?php echo base_url()?>assets/js/modernizr-2.6.2.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
 	</head>
-	<body>
-		
-	<div class="gtco-loader"></div>
-	
+<body>
 	<div id="page">
-
-	
-	<!-- <div class="page-inner"> -->
 	<nav class="gtco-nav" role="navigation">
 		<div class="gtco-container">
 			
@@ -87,36 +88,58 @@
 		</div>
 	</nav>
 	
-	<header id="gtco-header" class="gtco-cover gtco-cover-md" role="banner" 
-	style="background-image: url('../assets/css/img_bg_2.jpg')">
-		<div class="overlay"></div>
+	<div class="gtco-section">
 		<div class="gtco-container">
-			<div class="row">
-				<div class="col-md-12 col-md-offset-0 text-left">
-					
+			<?php
+    if(validation_errors()){
+        echo "<div class='alert alert-danger'>
+    	   	    <strong>Upss!</strong>".validation_errors()."
+              </div>"
+         ;
+    }
+?>
 
-					<div class="row row-mt-15em">
-						<div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
-							<h1>Planing Trip To Anywhere in The Lombok?</h1>	
-						</div>
-						<div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
-							<div class="form-wrap">
-								<div class="tab">
-									
-									<div class="tab-content">
-										<div class="tab-content-inner active" data-content="signup">
-											<h3>Book Your Trip</h3>
-											<a href="BookingTour/create_booking" type="submit" name="submit" class="btn btn-primary btn-block">Booking Now!</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-							
-					
-				</div>
-			</div>
-		</div>
-	</header>
+<?php 
+	echo form_open_multipart('Welcome/create_booking', array('class' => 'needs-validation', 'novalidate' => '') );
+?>
+<table class="table table-hover">
+	<h2>Fill Your Booking Tour</h2><br>
+<tr>
+
+<b>Your Name
+<?php echo form_dropdown('CustID', $customer, set_value('CustID'), 'class="form-control" required' ); ?>
+<b>Guide's Name
+<?php echo form_dropdown('GuideID', $guide, set_value('GuideID'), 'class="form-control" required' ); ?>
+<b>Your Packages
+<?php echo form_dropdown('Packages', $packages, set_value('Packages'), 'class="form-control"  id="Packages" onchange="cek_dropdown_packages($(this).val())" required' ); ?>
+<b>Start Date :</b> <input type="date" class="form-control" name="StartDate">
+<?php echo form_error('StartDate', '<div class="error">', '</div>'); ?> <br>
+<b>Total Price:</b> <input type="number" class="form-control total_price" name="TotalPrice" id="harga" readonly><br>
+<br>
+</tr>
+<input type="hidden" class="base_url" value="<?php echo base_url(); ?>">
+<input type="submit" id="submitBtn" class="btn btn-primary" value="Booking Now!">
+</table>
 </div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+    	cek_dropdown_packages = function(packages) {
+    		var base_url = $('.base_url').val();
+
+    		$.ajax({
+    			type: 'POST',
+    			url: base_url + 'BookingTour/get_harga',
+    			data: 'id=' + packages,
+    			dataType: 'html',
+    			success: function(response) {
+    				$('.total_price').val(response);
+    			}
+    		})
+    	}
+    })
+</script>
+
+</body>
+</html>
+

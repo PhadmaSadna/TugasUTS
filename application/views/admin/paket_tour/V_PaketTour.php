@@ -25,6 +25,10 @@
         </thead>
         <tbody>
 <?php
+function limit_words($string, $word_limit){
+          $words = explode(" ", $string);
+          return implode(" ", array_splice($words, 0, $word_limit));
+        }
 foreach ($Paket_Tour->result_array() as $row)
     {
       echo "<tr>";
@@ -32,7 +36,7 @@ foreach ($Paket_Tour->result_array() as $row)
       echo "<td>".$row['judul']."</td>";
       echo "<td>".$row['duration']."</td>";
       echo "<td>".$row['loc']."</td>";
-      echo "<td>".$row['jadwal']."</td>";
+      echo "<td>".limit_words($row['jadwal'], 6)."</td>";
       echo "<td>".$row['harga']."</td>";
       echo "<td><img src='".base_url().'assets/img/'.$row['image']."' width='50px' height='50px'></td>";
       echo "<td><a href='".site_url('Paket_Tour/C_Edit/'.$row['id'])."''>Edit</a>    ";
