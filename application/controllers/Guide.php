@@ -11,14 +11,15 @@ class Guide extends CI_Controller {
 		$this->load->model('ModGuide');
 		$this->load->helper('url_helper');
 		$this->load->helper(array('form', 'url'));
+		$this->load->library('form_validation');
 		date_default_timezone_set('Asia/Jakarta');
 	}
 
 	public function index()
 	{
 		$data['guide']=$this->ModGuide->get_article();
-		$this->load->view('admin/V_HeaderAdmin');
-		$this->load->view('admin/V_Guide', $data);
+		$this->load->view('admin/Header');
+		$this->load->view('guide/V_Guide', $data);
 	}
 
 	public function G_create(){
@@ -34,8 +35,8 @@ class Guide extends CI_Controller {
 		//Jika validasi belum berjalam
 		if ($this->form_validation->run() == FALSE) {
 			//Meload View tambah artikel
-			$this->load->view('admin/V_HeaderAdmin');
-			$this->load->view('admin/G_create');
+			$this->load->view('admin/Header');
+			$this->load->view('guide/G_create');
 		}else {
                  $data['input'] = array(
                  	'GuideName' => $this->input->post('GuideName'),
@@ -73,8 +74,8 @@ class Guide extends CI_Controller {
 		//Jika validasi belum berjalam
 		if ($this->form_validation->run() == FALSE) {
 			//Meload View tambah artikel
-			$this->load->view('admin/V_HeaderAdmin');
-			$this->load->view('admin/G_edit',$data);
+			$this->load->view('admin/Header');
+			$this->load->view('guide/G_edit',$data);
 		} else {
 			 $data['input'] = array(
                  	'GuideName' => $this->input->post('GuideName'),

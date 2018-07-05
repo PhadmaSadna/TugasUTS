@@ -11,6 +11,7 @@ class Customer extends CI_Controller {
 		$this->load->model('ModCust');
 		$this->load->helper('url_helper');
 		$this->load->helper(array('form', 'url'));
+		$this->load->library('form_validation');
 		date_default_timezone_set('Asia/Jakarta');
 	}
 
@@ -18,8 +19,8 @@ class Customer extends CI_Controller {
 	{
 		//Memanggil fungsi menampilkan semua tabel artikel
 		$data['customer']=$this->ModCust->get_article();
-		$this->load->view('admin/V_HeaderAdmin');
-		$this->load->view('admin/V_Customer', $data);
+		$this->load->view('admin/Header');
+		$this->load->view('customer/V_Customer', $data);
 	}
 
 	public function C_create(){
@@ -35,8 +36,8 @@ class Customer extends CI_Controller {
 		//Jika validasi belum berjalam
 		if ($this->form_validation->run() == FALSE) {
 			//Meload View tambah artikel
-			$this->load->view('admin/V_HeaderAdmin');
-			$this->load->view('admin/C_create');
+			$this->load->view('admin/Header');
+			$this->load->view('customer/C_create');
 		}else {
                  $data['input'] = array(
                  	'CustName' => $this->input->post('CustName'),
@@ -74,8 +75,8 @@ class Customer extends CI_Controller {
 		//Jika validasi belum berjalam
 		if ($this->form_validation->run() == FALSE) {
 			//Meload View tambah artikel
-			$this->load->view('admin/V_HeaderAdmin');
-			$this->load->view('admin/C_edit',$data);
+			$this->load->view('admin/Header');
+			$this->load->view('customer/C_edit',$data);
 		} else {
 			 $data['input'] = array(
                  	'CustName' => $this->input->post('CustName'),
