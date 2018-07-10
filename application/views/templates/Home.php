@@ -103,22 +103,20 @@
 			          <span aria-hidden="true">&times;</span>
 			        </button>
 			      </div>
-			      <div class="modal-body">
-
-<?php
-    $this->form_validation->set_error_delimiters('<div class="alert alert-warning" role="alert">', '</div>');
-?>
-<?php
-    if(validation_errors()){
-        echo "<div class='alert alert-danger'>
-    	   	    <strong>Upss!</strong>".validation_errors()."
-              </div>"
-         ;
-    }
-?>
-<?php 
-	echo form_open_multipart('FrontEnd/create_booking', array('class' => 'needs-validation', 'novalidate' => '') );
-?>
+			      <div class="modal-body">	
+					<?php
+					    $this->form_validation->set_error_delimiters('<div class="alert alert-warning" role="alert">', '</div>');
+					?>
+					<?php
+					    if(validation_errors()){
+					        echo "<div class='alert alert-danger'>
+					    	   	    <strong>Upss!</strong>".validation_errors()."
+					              </div>";
+					    }
+					?>
+					<?php 
+						echo form_open_multipart('FrontEnd/create_booking', array('class' => 'needs-validation', 'novalidate' => '') );
+					?>
 			      	<div class="form-group">
 			      		<label>Cust ID</label>
 			      		<?php echo form_dropdown('CustID', $customer, set_value('CustID'), 'class="form-control" required' ); ?>
@@ -213,10 +211,10 @@
 			<section class="gallery-area" id="gallery">
 				<div class="container-fluid">
 					<div class="row no-padding">
-						<div class="active-gallery">
+						<div class="active-gallery" align="center">
 							<?php foreach ($paket->result() as $key) {?>
 							<div class="item single-gallery">
-								<img src="<?=base_url('assets/images/').$key->image?>" alt="">
+								<img src="<?=base_url('assets/images/').$key->image?>" alt="" style="width: 300px;height: 200px">
 							</div>	
 							<?php } ?>														
 						</div>
