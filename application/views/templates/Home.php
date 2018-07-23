@@ -36,6 +36,7 @@
 									<li><a href="#about">About</a></li>
 									<li><a href="#gallery">Gallery</a></li>
 									<li><a href="#contact">Contact</a></li>
+									<li><a href="auth.php">Login</a></li>
 							    </ul>
 							  </div>						
 						</div>
@@ -43,9 +44,10 @@
 				</header>
 				<!-- End Header Area -->				
 			</section>
-
+			
 			<section class="default-banner active-blog-slider">
-					<div class="item-slider relative" style="background: url('<?php echo base_url()?>assets/img/gili-trawangan.jpeg'); background-size: cover;">
+				<?php foreach ($paket->result() as $key) {?>
+					<div class="item-slider relative" style="background: url('<?=base_url('assets/images/').$key->image?>'); background-size: cover;">
 						<div class="overlay" style="background: rgba(0,0,0,.3)"></div>
 						<div class="container">
 							<div class="row fullscreen justify-content-center align-items-center">
@@ -61,36 +63,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="item-slider relative" style="background: url('<?php echo base_url()?>assets/img/sunset.jpg'); background-size: cover;">
-						<div class="overlay" style="background: rgba(0,0,0,.3)"></div>
-						<div class="container">
-							<div class="row fullscreen justify-content-center align-items-center">
-								<div class="col-md-10 col-12">
-									<div class="banner-content text-center">
-										<h4 class="text-white mb-20 text-uppercase">Discover the Colorful World</h4>
-										<h1 class="text-uppercase text-white">New Adventure</h1>
-										<p class="text-white">The mighty Rinjani mountain of Gunung Rinjani is a massive volcano which towers over the island of Lombok. A climb to the top is one of the most exhilarating.</p>
-										<a href="#" data-toggle="modal" data-target="#exampleModal" class="text-uppercase header-btn">Booking Now</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="item-slider relative" style="background: url('<?php echo base_url()?>assets/img/air-terjun.jpg');background-size: cover;">
-						<div class="overlay" style="background: rgba(0,0,0,.3)"></div>
-						<div class="container">
-							<div class="row fullscreen justify-content-center align-items-center">
-								<div class="col-md-10 col-12">
-									<div class="banner-content text-center">
-										<h4 class="text-white mb-20 text-uppercase">Discover the Colorful World</h4>
-										<h1 class="text-uppercase text-white">New Experience</h1>
-										<p class="text-white">Sendang Gila waterfall (Sendang Gile), which attracts many thousands of Indonesian and foreign visitors annually, is Mount Rinjani national.</p>
-										<a href="#" data-toggle="modal" data-target="#exampleModal" class="text-uppercase header-btn">Booking Now</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+					<?php } ?>
 				</section>
 
 			<!-- Start Model Booking Area -->
