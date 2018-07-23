@@ -6,8 +6,8 @@ class FrontEnd extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('ModTour');
-		$this->load->model('ModCust');
-		$this->load->model('ModGuide');
+		//$this->load->model('ModCust');
+		//$this->load->model('ModGuide');
 		$this->load->model('model');
 
 		$this->load->helper('url_helper');
@@ -39,8 +39,8 @@ class FrontEnd extends CI_Controller {
 			
 		// Buat link pagination
 		$data["links"] = $this->pagination->create_links();
-		$data['customer'] = $this->ModCust->generate_cust_dropdown();
-		$data['guide'] = $this->ModGuide->generate_guide_dropdown();
+		//$data['customer'] = $this->ModCust->generate_cust_dropdown();
+		//$data['guide'] = $this->ModGuide->generate_guide_dropdown();
 		$data['packages'] = $this->model->generate_packages_dropdown();
 		$data['tour']=$this->ModTour->get_booking();
 		
@@ -57,8 +57,8 @@ class FrontEnd extends CI_Controller {
 		$this->load->library('form_validation');
 
 		//memanggil list custId
-		$data['customer'] = $this->ModCust->generate_cust_dropdown();
-		$data['guide'] = $this->ModGuide->generate_guide_dropdown();
+		//$data['customer'] = $this->ModCust->generate_cust_dropdown();
+		//$data['guide'] = $this->ModGuide->generate_guide_dropdown();
 		$data['packages'] = $this->model->generate_packages_dropdown();
 
 		//validasi inputan yang masuk

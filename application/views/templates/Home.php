@@ -36,7 +36,12 @@
 									<li><a href="#about">About</a></li>
 									<li><a href="#gallery">Gallery</a></li>
 									<li><a href="#contact">Contact</a></li>
-									<li><a href="auth.php">Login</a></li>
+									
+								<?php if($this->session->userdata('logged_in') != TRUE) { ?>
+									<li><a href="<?php echo base_url('Auth/login')?>">Login</a></li>
+								<?php } else { ?>
+									<li><a href="<?php echo base_url('Auth/logout')?>">Logout</a></li>
+								<?php } ?>
 							    </ul>
 							  </div>						
 						</div>
@@ -66,7 +71,7 @@
 					<?php } ?>
 				</section>
 
-			<!-- Start Model Booking Area -->
+			<!-- Start Model Booking Area 
 			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			  <div class="modal-dialog" role="document">
 			    <div class="modal-content">

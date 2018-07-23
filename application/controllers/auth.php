@@ -1,40 +1,59 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Auth extends CI_Controller {
 
-	public function index() {
-		$this->load->view('index');
+	public function __construct()
+	{
+		//Membuat kelas parent agar bisa digunakan di semua fungsi
+		parent::__construct();
+		//Load model dan helper
+		$this->load->model('ModUser');
+		$this->load->helper('url_helper');
+		$this->load->helper(array('form', 'url'));
+		$this->load->library('form_validation');
 	}
 
-	public function cek_login() {
-		$data = array('email' => $this->input->post('email', TRUE),
-						'password' => md5($this->input->post('password', TRUE))
-			);
-		$this->load->model('model_user'); // load model_user
-		$hasil = $this->model_user->cek_user($data);
-		if ($hasil->num_rows() == 1) {
-			foreach ($hasil->result() as $sess) {
-				$sess_data['logged_in'] = 'Sudah Loggin';
-				$sess_data['uid'] = $sess->uid;
-				$sess_data['email'] = $sess->email;
-				$sess_data['level'] = $sess->level;
-				$this->session->set_userdata($sess_data);
-			}
-			if ($this->session->userdata('level')=='Administrator') {
-				redirect('BackEnd');
-			}
-			elseif ($this->session->userdata('level')=='Customer') {
-				redirect('FrontEnd');
-			}
-			elseif ($this->session->userdata('level')=='Guide') {
-				redirect('FrontEnd');
-			}		
-		}
-		else {
-			echo "<script>alert('Gagal login: Cek username, password!');history.go(-1);</script>";
-		}
+	public function login()
+	{
+		$this->form_validation->set_rules('Email', 'Email', 'required');
+        $this->form_validation->set_rules('Password', 'Password', 'required');
+
+        if($this->form_validation->run() === FALSE){
+            $this->load->view('login/v_login');
+        } else {
+            
+            $email = $this->input->post('Email');
+            $password = md5($this->input->post('Password'));
+
+            $UserID = $this->ModUser->login_user($email, $password);
+
+            if($UserID){
+                $user_data = array(
+                    'UserID' => $UserID,
+                    'Email' => $email,
+                    'logged_in' => true,
+                    'Level_ID' => $this->ModUser->get_user_level($UserID)
+                );
+
+                $this->session->set_userdata($user_data);
+
+                redirect('Page/');
+            } else {
+               
+                $this->session->set_flashdata('login_failed', 'Login invalid');
+
+                redirect('Auth/login');
+            }       
+        }
 	}
+
+	public function logout(){
+        $this->session->unset_userdata('logged_in');
+        $this->session->unset_userdata('UserID');
+        $this->session->unset_userdata('Email');
+
+        redirect('Auth/login');
+    }
 
 }
-
-?>
