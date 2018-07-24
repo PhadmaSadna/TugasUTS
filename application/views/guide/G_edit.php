@@ -6,35 +6,47 @@
                     <div class="col-sm-12">
                         <div class="container">
                             <h4>FORM EDIT CUSTOMER</h4><hr>
-                            <?php echo (isset( $upload_error)) ? '<div class="alert alert-warning" role="alert">' .$upload_error. '</div>' : ''; ?>
                             <?php 
                                 echo validation_errors();
-                                echo form_open_multipart('Guide/G_edit/'.$show_article['GuideID']);
+                                echo form_open_multipart('Page/edit_guide/'.$show_guide['UserID']);
                             ?>  
                             <?php 
                                 echo validation_errors();
-                                echo form_open_multipart('Guide/G_edit', array('class' => 'needs-validation', 'novalidate' => '') );
+                                echo form_open_multipart('Page/edit_guide', array('class' => 'needs-validation', 'novalidate' => '') );
                             ?>
 
+                            <input type="text" class="form-control" value="3" name="Level_ID" required hidden>
                             <div class="form-group">
-                                <label>Nama</label>
-                                <input type="text" class="form-control" name="GuideName" value="<?php echo $show_article['GuideName'] ?>" required>
+                                <label>Full Name</label>
+                                <input type="text" class="form-control" name="FullName" value="<?php echo $show_guide['FullName'] ?>" required>
                                 <div class="invalid-feedback">Please, fill the blanks</div>
                             </div>
                             <div class="form-group">
-                                <label>Gender</label>
-                                <input type="radio" class="form-control" name="Gender" value="L">
-                                <input type="radio" class="form-control" name="Gender" value="P">
+                                <label>Gender</label> <br>
+                                <input type="radio" name="Gender" value="M" required> Male 
+                                <input type="radio" name="Gender" value="F" required> Female
                                 <div class="invalid-feedback">Please, fill the blanks</div>
                             </div>
                             <div class="form-group">
-                                <label>Telepon</label>
-                                <input type="text" class="form-control" name="GuidePhone" value="<?php echo $show_article['GuidePhone'] ?>" required>
+                                <label>Phone</label>
+                                <input type="text" class="form-control" name="Phone" value="<?php echo $show_guide['Phone'] ?>" required>
+                                <div class="invalid-feedback">Please, fill the blanks</div>
+                            </div>
+                            <div class="form-group">
+                                <label>Address</label>
+                                <textarea name="Address" class="form-control" style="height:150px;" required>
+                                    <?php echo $show_guide['Address'] ?>
+                                </textarea>
                                 <div class="invalid-feedback">Please, fill the blanks</div>
                             </div>
                             <div class="form-group">
                                 <label>E-Mail</label>
-                                <input type="text" class="form-control" name="GuideEmail" value="<?php echo $show_article['GuideEmail'] ?>" required>
+                                <input type="text" class="form-control" name="Email" value="<?php echo $show_guide['Email'] ?>" required>
+                                <div class="invalid-feedback">Please, fill the blanks</div>
+                            </div>
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input type="text" class="form-control" name="Password" value="<?php echo $show_guide['Password'] ?>" required>
                                 <div class="invalid-feedback">Please, fill the blanks</div>
                             </div>
                             <div class="form-group">

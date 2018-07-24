@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 23, 2018 at 08:09 AM
+-- Generation Time: Jul 24, 2018 at 02:03 AM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.2.3
 
@@ -124,7 +124,10 @@ INSERT INTO `user` (`UserID`, `Level_ID`, `FullName`, `Gender`, `Phone`, `Addres
 (3, 3, 'Nobi Nobita', 'M', 868576565, 'Tokyo', 'guide@gmail.com', 'a0c391dc49c440fc9962168353cedde3'),
 (4, 3, 'Ryanto', 'M', 98978686, 'Malang', 'ryanto@gmail.com', 'a0c391dc49c440fc9962168353cedde3'),
 (5, 3, 'Adinda', 'F', 878867576, 'Surabaya', 'adinda@gmail.com', 'a0c391dc49c440fc9962168353cedde3'),
-(6, 3, 'Yurianto', 'M', 998687765, 'Malang', 'yurianto@gmail.com', 'guide');
+(6, 3, 'Yurianto', 'M', 998687765, 'Malang', 'yurianto@gmail.com', 'guide'),
+(7, 2, 'Dekisugi', 'M', 989787675, 'Jepang', 'deki@gmail.com', '3f3748b87788b68b940ffe1692370f03'),
+(8, 2, 'Aldrey Safwa', 'M', 897979, 'Sukun, Malang', 'aldrey@gmail.com', '80add407f43eb2c19bf124e1b2b95b74'),
+(9, 2, 'Tomy Prastyo', 'M', 99887687, 'Tulungagung                         ', 'tomy@gmail.com', '852907c499555bd7ae0be46847bc3e37');
 
 --
 -- Indexes for dumped tables
@@ -183,7 +186,7 @@ ALTER TABLE `tour`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `UserID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `UserID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- Constraints for dumped tables

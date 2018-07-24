@@ -31,37 +31,35 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-12">
-                                <a href="G_create" class="btn btn-outline-danger">Add Data</a> <br><br>
+                                <a href="create_guide" class="btn btn-outline-danger">Add Data</a> <br><br>
                                 <table id="table_id" class="table table-striped table-bordered">
                                     <thead class="thead-dark">
                                       <tr>
-                                        <th>ID</th>
-                                        <th>Nama</th>
+                                        <th>User ID</th>
+                                        <th>FullName</th>
                                         <th>Gender</th>
-                                        <th>Telepon</th>
-                                        <th>E-mail</th>
+                                        <th>Phone</th>
+                                        <th>Address</th>
+                                        <th>Email</th>
                                         <th>Action</th>
                                       </tr>
                                     </thead>
                                     <tbody>
-                            <?php
-                                foreach ($guide->result_array() as $row)
-                                    {
-                                      echo "<tr>";
-                                      echo "<td>".$row['GuideID']."</td>";
-                                      echo "<td>".$row['GuideName']."</td>";
-                                      echo "<td>".$row['Gender']."</td>";
-                                      echo "<td>".$row['GuidePhone']."</td>";
-                                      echo "<td>".$row['GuideEmail']."</td>";
-    echo "<td><a href='".site_url('Guide/G_edit/'.$row['GuideID'])."'><i class='fa fa-pencil'></i></a>";
-    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-    echo "<a href='".site_url('Guide/delete/'.$row['GuideID'])."'><i class='fa fa-trash'></i></a></td>";
-                                  echo "</tr>";
-
-                                }
-                            ?>
-                        </tbody>
-                    </table>
+                                        <?php foreach ($guide as $key) : ?>
+                                        <tr>
+                                            <td><?php echo $key->UserID ?></td>
+                                            <td><?php echo $key->FullName ?></td>
+                                            <td><?php echo $key->Gender ?></td>
+                                            <td><?php echo $key->Phone ?></td>
+                                            <td><?php echo $key->Address ?></td>
+                                            <td><?php echo $key->Email ?></td>
+    <td><a href="<?php echo site_url('Page/edit_guide/'.$key->UserID)?>"><i class='fa fa-pencil'></i></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="<?php echo site_url('Page/delete_guide/'.$key->UserID)?>"><i class='fa fa-trash'></i></a></td>
+                                        </tr>
+                                        <?php endforeach ?>
+                                    </tbody>
+                                </table>
                             </div>
                             
                         </div>

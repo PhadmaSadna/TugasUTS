@@ -31,35 +31,33 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-12">
-                                <a href="C_create" class="btn btn-outline-danger">Add Data</a> <br><br>
+                                <a href="create_customer" class="btn btn-outline-danger">Add Data</a> <br><br>
                                 <table id="table_id" class="table table-striped table-bordered">
                                     <thead class="thead-dark">
                                       <tr>
-                                        <th>ID</th>
-                                        <th>Nama</th>
-                                        <th>Alamat</th>
-                                        <th>Telepon</th>
-                                        <th>E-mail</th>
+                                        <th>User ID</th>
+                                        <th>FullName</th>
+                                        <th>Gender</th>
+                                        <th>Phone</th>
+                                        <th>Address</th>
+                                        <th>Email</th>
                                         <th>Action</th>
                                       </tr>
                                     </thead>
                                     <tbody>
-                            <?php
-                            foreach ($customer->result_array() as $row)
-                                {
-                                  echo "<tr>";
-                                  echo "<td>".$row['CustID']."</td>";
-                                  echo "<td>".$row['CustName']."</td>";
-                                  echo "<td>".$row['CustAddress']."</td>";
-                                  echo "<td>".$row['CustPhone']."</td>";
-                                  echo "<td>".$row['CustEmail']."</td>";
-    echo "<td><a href='".site_url('Customer/C_edit/'.$row['CustID'])."'><i class='fa fa-pencil'></i></a>";
-    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-    echo "<a href='".site_url('Customer/delete/'.$row['CustID'])."'><i class='fa fa-trash'></i></a></td>";
-                                  echo "</tr>";
-
-                                }
-                            ?>
+                                        <?php foreach ($customer as $key) : ?>
+                                        <tr>
+                                            <td><?php echo $key->UserID ?></td>
+                                            <td><?php echo $key->FullName ?></td>
+                                            <td><?php echo $key->Gender ?></td>
+                                            <td><?php echo $key->Phone ?></td>
+                                            <td><?php echo $key->Address ?></td>
+                                            <td><?php echo $key->Email ?></td>
+    <td><a href="<?php echo site_url('Page/edit_customer/'.$key->UserID)?>"><i class='fa fa-pencil'></i></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="<?php echo site_url('Page/delete_customer/'.$key->UserID)?>"><i class='fa fa-trash'></i></a></td>
+                                        </tr>
+                                        <?php endforeach ?>
                         </tbody>
                     </table>
                             </div>

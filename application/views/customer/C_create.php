@@ -12,27 +12,38 @@
                             <?php echo (isset( $upload_error)) ? '<div class="alert alert-warning" role="alert">' .$upload_error. '</div>' : ''; ?>
                             <?php 
                                 echo validation_errors();
-                                echo form_open_multipart('Customer/C_create', array('class' => 'needs-validation', 'novalidate' => '') );
+                                echo form_open_multipart('Page/create_customer', array('class' => 'needs-validation', 'novalidate' => '') );
                             ?>
-
+                            <input type="text" class="form-control" value="2" name="Level_ID" required hidden>
                             <div class="form-group">
-                                <label>Nama</label>
-                                <input type="text" class="form-control" name="CustName" required>
+                                <label>Full Name</label>
+                                <input type="text" class="form-control" name="FullName" required>
                                 <div class="invalid-feedback">Please, fill the blanks</div>
                             </div>
                             <div class="form-group">
-                                <label>Alamat</label>
-                                <textarea name="CustAddress" class="form-control" style="height:150px;" required></textarea>
+                                <label>Gender</label> <br>
+                                <input type="radio" name="Gender" value="M" required> Male 
+                                <input type="radio" name="Gender" value="F" required> Female
                                 <div class="invalid-feedback">Please, fill the blanks</div>
                             </div>
                             <div class="form-group">
-                                <label>Telepon</label>
-                                <input type="text" class="form-control" name="CustPhone" required>
+                                <label>Phone</label>
+                                <input type="text" class="form-control" name="Phone" required>
+                                <div class="invalid-feedback">Please, fill the blanks</div>
+                            </div>
+                            <div class="form-group">
+                                <label>Address</label>
+                                <textarea name="Address" class="form-control" style="height:150px;" required></textarea>
                                 <div class="invalid-feedback">Please, fill the blanks</div>
                             </div>
                             <div class="form-group">
                                 <label>E-Mail</label>
-                                <input type="text" class="form-control" name="CustEmail" required>
+                                <input type="text" class="form-control" name="Email" required>
+                                <div class="invalid-feedback">Please, fill the blanks</div>
+                            </div>
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input type="text" class="form-control" name="Password" required>
                                 <div class="invalid-feedback">Please, fill the blanks</div>
                             </div>
                             <div class="form-group">

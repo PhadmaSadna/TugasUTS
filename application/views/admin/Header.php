@@ -53,10 +53,10 @@
                         <a href="#"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
                     </li>
                     <li class="active">
-                        <a href="<?php echo base_url()?>Customer/"> <i class="menu-icon fa fa-female"></i>Data Customer </a>
+                        <a href="<?php echo base_url()?>Page/get_customer"> <i class="menu-icon fa fa-female"></i>Data Customer </a>
                     </li>
                     <li class="active">
-                        <a href="<?php echo base_url()?>Guide/"> <i class="menu-icon fa fa-male"></i>Data Guide</a>
+                        <a href="<?php echo base_url()?>Page/get_guide"> <i class="menu-icon fa fa-male"></i>Data Guide</a>
                     </li>
                     <li class="active">
                         <a href="#"> <i class="menu-icon fa fa-users"></i>Data Account</a>
